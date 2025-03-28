@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "A tool to fetch PubMed research papers based on user queries."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.fetch_papers:main"
+
